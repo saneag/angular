@@ -1,0 +1,19 @@
+main{
+  .date-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .date{
+      color: #fff;
+      font-size: 4rem;
+      letter-spacing: 10px;
+      font-family: Neonderthaw, sans-serif;
+      text-shadow: 2px 2px 5px #F637EC;
+    }
+    .date-caption{
+      font-size: 2rem;
+    }
+  }
+}

@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  links = [
+    {path: '/home'},
+    {path: '/about'},
+    {path: '/contact'}
+  ]
 }

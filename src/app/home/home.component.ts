@@ -12,4 +12,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  currentDate = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
 }

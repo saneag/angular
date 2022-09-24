@@ -1,9 +1,9 @@
 <header>
   <nav>
     <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
+      <li *ngFor="let link of links">
+        <a [routerLink]="link.path == '/home' ? '/' : link.path">{{link.path.slice(1) | titlecase}}</a>
+      </li>
     </ul>
   </nav>
 </header>
