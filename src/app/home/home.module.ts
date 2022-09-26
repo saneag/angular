@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import {HomeRoutingModule} from "./home-routing.module";
+import { HomeRoutingModule } from './home-routing.module';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}

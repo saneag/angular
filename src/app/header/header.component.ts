@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { LINKS } from '../shared/CONSTANTS';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
 
@@ -12,9 +13,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  links = [
-    {path: '/home'},
-    {path: '/about'},
-    {path: '/contact'}
-  ]
+  LINKS = LINKS;
 }
