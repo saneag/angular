@@ -1,6 +1,10 @@
 <main>
-  <div [className]="'date-container'">
-    <p [className]="'date date-caption'">Today is:</p>
+  <div [className]="'date_container'">
+    <p [className]="'date date_caption'">Today is:</p>
     <p [className]="'date'">{{currentDate}}</p>
+    <button [className]="'time_button'" (click)="toggleShowTime()">
+      {{showTime == false ? 'Click to see time' : 'Current time: '}}
+      <span *ngIf="showTime">{{time | date: 'hh:mm:ss a'}}</span>
+    </button>
   </div>
 </main>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  showTime = false;
+  currentDate = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
 
-  ngOnInit(): void {
+  time = new Date();
+  intervalId = 0;
+
+  toggleShowTime() {
+    this.showTime = !this.showTime;
+    if(this.showTime) {
+      this.time = new Date();
+      this.intervalId = setInterval(() => {
+        this.time = new Date();
+      }, 1000);
+    }
+    else {
+      clearInterval(this.intervalId);
+    }
   }
 
-  currentDate = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
+  constructor() {
+  }
+
+  ngOnInit() {
+
+  }
 }
