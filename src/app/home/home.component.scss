@@ -1,28 +1,28 @@
-main{
-  .date_container{
-    height: 100%;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .toggle_buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    .date{
-      color: #fff;
-      font-size: 4rem;
-      letter-spacing: 10px;
-      font-family: Neonderthaw, sans-serif;
-      text-shadow: 2px 2px 5px #F637EC;
-    }
-    .date_caption{
-      font-size: 2rem;
-    }
-    .time_button{
-      margin-top: 20px;
-      background-color: #6820EC;
-      color: #fff;
-      font-family: Comfortaa, sans-serif;
+    gap: 20px;
+
+    button {
+      background-color: #4a148c;
+      color: white;
       padding: 10px 20px;
-      border-radius: 10px;
+      font-family: Comfortaa, sans-serif;
       font-size: 1.5rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }
