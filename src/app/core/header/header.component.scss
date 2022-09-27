@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../shared/sharedStyles";
+@import "../../../styles/variables";
+@import "../../shared/shared-styles";
 header{
   @include container_style;
   nav{

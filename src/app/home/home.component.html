@@ -6,5 +6,6 @@
       {{showTime == false ? 'Click to see time' : 'Current time: '}}
       <span *ngIf="showTime">{{time | date: 'hh:mm:ss a'}}</span>
     </button>
+  <app-calendar-view></app-calendar-view>
   </div>
 </main>
