@@ -1,11 +1,8 @@
+@import "../shared/sharedStyles";
+
 footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
+  @include container_style;
   .made-by{
-    color: #fff;
-    font-family: Comfortaa, sans-serif;
-    font-size: 1.5rem;
+    @include text_style;
   }
 }

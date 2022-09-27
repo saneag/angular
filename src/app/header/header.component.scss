@@ -1,19 +1,14 @@
 @import "../../styles/variables";
-
+@import "../shared/sharedStyles";
 header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
+  @include container_style;
   nav{
     ul{
       display: flex;
       gap: 30px;
       li{
         a{
-          color: #fff;
-          font-family: Comfortaa, sans-serif;
-          font-size: 1.5rem;
+          @include text_style;
         }
       }
     }
