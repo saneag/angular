@@ -4,25 +4,4 @@ main {
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-
-  .toggle_buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    button {
-      background-color: #4a148c;
-      color: white;
-      padding: 10px 20px;
-      font-family: Comfortaa, sans-serif;
-      font-size: 1.5rem;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background-color: #000;
-        color: #fff;
-      }
-    }
-  }
 }

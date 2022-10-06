@@ -1,8 +1,11 @@
 <main>
-  <div [className]="'toggle_buttons'">
-    <button (click)="toggleCalendarChild()">Calendar</button>
-    <button (click)="toggleTextChild()">Text</button>
-  </div>
-  <app-text-view *ngIf="showText" [showTime]="showTime"></app-text-view>
+  <app-change-view-buttons
+    (toggleCalendar)="toggleCalendarChild()"
+    (toggleText)="toggleTextChild()"
+  ></app-change-view-buttons>
+  <app-text-view
+    *ngIf="showText"
+    [showTime]="showTime"
+  ></app-text-view>
   <app-calendar-view *ngIf="showCalendar"></app-calendar-view>
 </main>

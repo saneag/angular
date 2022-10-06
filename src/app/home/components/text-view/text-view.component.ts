@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-text-view',
@@ -46,6 +46,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TextViewComponent implements OnInit {
   @Input() showTime = false;
+
   currentDate = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
 
   time = new Date();
