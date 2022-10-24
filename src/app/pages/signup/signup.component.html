@@ -1,0 +1,17 @@
+<main>
+    <form class="login-form" [formGroup]="credentials" (ngSubmit)="onSubmit()">
+        <div class="input-fields">
+            <label for="name">Name</label>
+            <input id="name" type="text" formControlName="name">
+        </div>
+        <div class="input-fields">
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email">
+        </div>
+        <div class="input-fields">
+            <label for="password">Password</label>
+            <input id="password" type="password" formControlName="password">
+        </div>
+        <button class="submit-btn" type="submit" [disabled]="!credentials.valid">Submit</button>
+    </form>
+</main>

@@ -1,0 +1,10 @@
+@import '../../shared/shared-styles';
+@import '../../../styles/variables';
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include login_form;
+}

@@ -1,12 +1,47 @@
-@mixin container_style{
+@mixin container_style {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
 }
 
-@mixin text_style{
+@mixin text_style {
   color: #fff;
   font-family: Comfortaa, sans-serif;
   font-size: 1.5rem;
+}
+
+@mixin login_form {
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 600px;
+    gap: 30px;
+
+    .input-fields {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        @include text_style;
+      }
+
+      input {
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+        padding: 5px 10px;
+        @include text_style;
+        font-size: 20px;
+      }
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
 }
