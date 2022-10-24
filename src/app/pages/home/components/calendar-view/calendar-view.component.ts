@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CalendarCreator } from '../../../service/calendarCreator.service';
-import { Day } from '../../../models/day.model';
+import { CalendarCreator } from '../../../../services/calendarCreator.service';
+import { Day } from '../../../../models/day.model';
 
 @Component({
   selector: 'app-calendar-view',
