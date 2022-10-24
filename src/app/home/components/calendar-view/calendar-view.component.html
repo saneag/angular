@@ -1,0 +1,17 @@
+<div [className]="'calendar_container'">
+  <span [className]="'calendar_header'">
+    {{ calendarCreator.getMonthName(monthNumber) }}
+    {{ monthDays[0].year }}
+  </span>
+  <div [className]="'calendar'">
+    <span *ngFor="let weekDay of weekDaysName" [className]="'day_name'">
+      {{ weekDay }}
+    </span>
+
+    <div *ngFor="let day of monthDays" [className]="'day'">
+      <span [className]="currentDay === day.number ? 'active' : ''">
+        {{ day.number }}
+      </span>
+    </div>
+  </div>
+</div>

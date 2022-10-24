@@ -1,0 +1,8 @@
+@import "../../shared/shared-styles";
+
+footer{
+  @include container_style;
+  .made-by{
+    @include text_style;
+  }
+}

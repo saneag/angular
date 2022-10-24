@@ -1,0 +1,12 @@
+@mixin container_style{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+@mixin text_style{
+  color: #fff;
+  font-family: Comfortaa, sans-serif;
+  font-size: 1.5rem;
+}

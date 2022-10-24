@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+@import "../../shared/shared-styles";
+header{
+  @include container_style;
+  nav{
+    ul{
+      display: flex;
+      gap: 30px;
+      li{
+        a{
+          @include text_style;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<header>
+  <nav>
+    <ul>
+      <li *ngFor="let link of LINKS">
+        <a [routerLink]="link.path">{{link.pageTitle}}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
