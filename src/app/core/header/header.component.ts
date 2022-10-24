@@ -3,8 +3,8 @@ import { LINKS } from '../../shared/CONSTANTS';
 
 @Component({
   selector: 'app-header',
-  templateUrl: '../../core/header/header.component.html',
-  styleUrls: ['../../core/header/header.component.scss'],
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   constructor() {}

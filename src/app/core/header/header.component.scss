@@ -1,14 +1,41 @@
 @import "../../../styles/variables";
 @import "../../shared/shared-styles";
-header{
+
+header {
   @include container_style;
-  nav{
-    ul{
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+    ul {
       display: flex;
       gap: 30px;
-      li{
-        a{
+      grid-column: 2 / 3;
+
+      li {
+        a {
           @include text_style;
+        }
+      }
+    }
+
+    .auth-btns {
+      display: flex;
+      gap: 20px;
+
+      .auth-btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $primary-color;
+        color: #fff;
+        font-family: Comfortaa, sans-serif;
+
+        &:hover {
+          background-color: #2e1652;
         }
       }
     }

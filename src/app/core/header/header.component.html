@@ -1,9 +1,13 @@
 <header>
-  <nav>
-    <ul>
-      <li *ngFor="let link of LINKS">
-        <a [routerLink]="link.path">{{link.pageTitle}}</a>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li *ngFor="let link of LINKS">
+                <a [routerLink]="link.path">{{link.pageTitle}}</a>
+            </li>
+        </ul>
+        <div [className]="'auth-btns'">
+            <a routerLink="/login" [className]="'auth-btn login-btn'"><span>Login</span></a>
+            <a routerLink="/signup" [className]="'auth-btn signUp-btn'">Sign up</a>
+        </div>
+    </nav>
 </header>
